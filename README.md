@@ -6,7 +6,7 @@ Dockerized FMD2 (Windows with Wine) using VNC, noVNC and webSocketify to display
 
 Websites protected with Cloudflare do not work with this, FlareSolverr doesnt work with wine.
 
-https://hub.docker.com/r/sillysuki/fmd2
+https://github.com/yukariin/docker-FMD2/pkgs/container/fmd2
 
 Make sure to configure it using the 'web' ui.
 
@@ -20,7 +20,7 @@ Make sure to configure it using the 'web' ui.
 ```yaml
 services:
   fmd2:
-    image: sillysuki/fmd2:latest
+    image: ghcr.io/yukariin/fmd2:latest
     container_name: fmd2
     environment:
       - PUID=1000
